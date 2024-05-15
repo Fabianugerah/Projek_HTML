@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modul 13-14</title>
+        <link rel="icon" href="icon html.png">
+    </head>
+
+    <body>
+        <!-- Moodul 13 -->
+        <center><h1>MODUL 13</h1></center>
+
+        <h2>Tabel</h2>
+
+        <h3>Tabel Biasa/Standart</h3>
+        <!-- Table dengan tag table fungsinya untuk membuat tabel -->
+        <!-- Table Rows dengan tag tr fungsinya untuk membuat garis pada tabel -->
+        <!-- Table Data dengan tag td fungsinya untuk membuat data pada tabel -->
+        <!-- Attribute border fungsinya untuk memberi border pada tabel-->
+        <table border="1">
+            <tr>
+                <td>5</td>
+                <td>5</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>N</td>
+                <td>U</td>
+                <td>G</td>
+                <td>R</td>
+                <td>A</td>
+                <td>H</td>
+            </tr>
+        </table>
+
+        <h3>Tabel Dengan Header/Judul</h3>
+        <!-- Tabel Header dengan tag td fungsinya sebagai judul tabel dan tulisannya menjadi tebal -->
+        <h4>>Ke Bawah</h4>
+        <table border="1">
+            <tr>
+                <th>Senin</th>
+                <td>Makan</td>
+                <td>Tidur</td>
+                <td>BAB</td>
+            </tr>
+
+            <tr>
+                <th>Selasa</th>
+                <td>Makan</td>
+                <td>Olahrag</td>
+                <td>Tidur</td>
+            </tr>
+        </table>
+
+        <h4>>Ke Samping</h4>
+        <table border="1">
+            <tr>
+                <th>Senin</th>
+                <th>Selasa</th>
+                <th>Rabu</th>
+                
+            </tr>
+
+            <tr>
+                <td>Makan</td>
+                <td>Makan</td>
+                <td>Makan</td>
+                <tr>
+                    <td>Tidur</td>
+                    <td>Olahraga</td>
+                    <td>BAB</td>
+                </tr>
+                <tr>
+                    <td>BAB</td>
+                    <td>BAB</td>
+                    <td>Tidur</td>
+                </tr>
+                
+            </tr>
+        </table>
+
+        <h3>Alokasi kolom</h3>
+        <!-- Attribute colspan untuk menggabungkan kolom -->
+        <!-- Attribute rowspan untuk meenggabungkan baris -->
+        <h4>>Colspan</h4>
+        <table border="1">
+            <tr>
+                <th>Senin</th>
+                <th>Selasa</th>
+                <th>Rabu</th>
+                
+            </tr>
+
+            <tr>
+                <td colspan="3">Makan</td>
+                
+                <tr>
+                    <td>Tidur</td>
+                    <td>Olahraga</td>
+                    <td>BAB</td>
+                </tr>
+                <tr>
+                    <td colspan="2">BAB</td>
+                    <td>Tidur</td>
+                </tr>
+                
+            </tr>
+        </table>
+
+        <h4>>Rowspan</h4>
+        <table border="1">
+            <tr>
+                <th>Jam</th>
+                <th>Senin</th>
+            </tr>
+            <tr>
+                <th>06.00</th>
+                <td>Berangkat Sekolah</td>
+            </tr>
+            <tr>
+                <th>09.20</th>
+                <td>Istirahat</td>
+            </tr>
+            <tr>
+                <th rowspan="2">12.20</th>
+                <td>Sholat Dhuhur</td>
+                <tr>
+                    <td>Makan Siang</td>
+                </tr>
+            </tr>
+            <tr>
+                <th rowspan="2">14.50</th>
+                <td>Pulang</td>
+                <tr>
+                    <td>Shalat Ashar</td>
+                </tr>
+            </tr>
+        </table>
+        <hr>
+
+        <!-- Modul 14 -->
+        <center><h1>MODUL 14</h1></center>
+
+        <h2>Form</h2>
+
+        <!-- Fungsi tag form yaitu untuk pengumpulan data -->
+        <!-- Tag input fungsinya untuk memasukkan sebuah inputan dalam berbagai jenis -->
+        <!-- Attribute type fungsinya untuk memilih jenis inputan yang kita pilih -->
+        <form>
+            <!-- input type "text" fungsinya digunakan untuk memasukkan teks-->
+            Nama depan : <input type="text"><br>
+            Nama belakang : <input type="text"><br>
+            <!-- input type "password" fungsinya digunakan untuk memasukkan password -->
+            Password : <input type="password"><br>
+
+            <h3>Radio Button</h3>
+
+            <h4>>Jenis Kelamin :</h4>
+            <!-- input type "radio" fungsinya digunakan untuk memasukkan pilihan yang hanya bisa dipilih salah satunya-->
+            <input type="radio" name="jenis_kelamin" value="laki-laki">
+            <label for="laki-laki">Laki-laki</label>
+            <input type="radio" name="jenis_kelamin" value="perempuan">
+            <label for="perempuan">Perempuan</label>
+
+            <h3>Checkbox</h3>
+            
+            <h4>>Genre Film Favorit : </h4>
+             <!-- input type "checkbox" fungsinya digunakan untuk memasukkan pilihan dan bisa lebih dari 1 -->
+             <input type="checkbox" name="film" value="komedi">
+             <label for="komedi">Komedi</label><br>
+             <input type="checkbox" name="film" value="romantis">
+             <label for="romantis">Romantis</label><br>
+             <input type="checkbox" name="film" value="action">
+             <label for="action">Action</label><br>
+             <input type="checkbox" name="film" value="petualangan">
+             <label for="petualangan">Petualangan</label>
+
+             <h3>Dropdown List</h3>
+
+             <h4>>Game Favorit :</h4>
+             <!-- Tag select berfungsi untuk membuat objek form yang menampilkan list pilihan yang bisa dipilih-->
+             <!-- Sedangkan tag option fugsinya untuk menampilkan pilihannya -->
+             <select name="game">
+                <option value="mlbb">Mobile Legend</option>
+                <option value="freefire">Free Fire</option>
+                <option value="pubg">PUBG Mobile</option>
+                <option value="coc">Clans Of Clans</option>
+             </select>
+
+             <h3>Upload File</h3>
+
+             <h4>>File Tugas : </h4>
+             <!-- input type "file" fungsinya digunakan untuk mengupload sebuah file -->
+             Upload file tugas disini: <input type="file" name="tugas" value="upload_tugas">
+             <br>
+             <!-- input type "button" membuat tombol baik itu di dalam form maupun diluar form -->
+             <input type="button" name="submit" value="submit">
+             <hr>
+        </form>
+    </body>
+</html>
